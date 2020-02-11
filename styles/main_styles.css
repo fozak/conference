@@ -10,6 +10,7 @@
 3. Menu
 4. Home
 	4.1 Header
+	4.2 Speakers
 5. Intro
 6. Pricing
 7. Calendar
@@ -817,6 +818,57 @@ section
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 26px;
+}
+
+
+/*********************************
+5. Speakers
+*********************************/
+
+.speakers
+{
+	width: 100%;
+	background: #FFFFFF;
+}
+.speaker_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.speaker_content
+{
+	width: 100%;
+	padding-left: 130px;
+	padding-right: 150px;
+	padding-top: 103px;
+	padding-bottom: 114px;
+}
+.speaker_title
+{
+	font-size: 30px;
+	font-weight: 500;
+	color: #4c4c4c;
+}
+.speaker_subtitle
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #2b88cb;
+	margin-top: -3px;
+}
+.speaker_text
+{
+	margin-top: 49px;
+}
+.speaker_button
+{
+	margin-top: 68px;
 }
 
 /*********************************

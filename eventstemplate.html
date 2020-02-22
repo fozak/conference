@@ -171,7 +171,7 @@
 					<!-- Event -->
            <!-- template start change-->
            
-          <script id="event-template" type="text/x-handlebars-template">
+          <script id="events-template" type="text/x-handlebars-template">
 					<div class="event">
 						<div class="row row-lg-eq-height">
 							<div class="col-lg-6 event_col">
@@ -494,8 +494,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         var source   = $("#events-template").html();
         var template = Handlebars.compile(source);
 
-        $.each( tabletop.sheets("events").all(), function(i, parameter) {
-          var html = template(parameter);
+        $.each( tabletop.sheets("events").all(), function(i, events) {
+          var html = template(events);
           $("#content").append(html);
         });
       }

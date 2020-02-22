@@ -8,9 +8,9 @@
     <marquee><p>As you can tell, you can make a very pretty web page with this stuff.</p></marquee>
     
     <div id="content"></div>
-    
+     <!-- 
     <script id="cat-template" type="text/x-handlebars-template" src="../a/catstemplate.hbs"></script>
-
+-->
     <!-- Don't need jQuery for Tabletop, but using it for this example -->
     <script type="text/javascript" src="../a/handlebars.js"></script>
    <script src="js/jquery-3.2.1.min.js"></script>
@@ -23,9 +23,12 @@
                          callback: showInfo,
                          parseNumbers: true } );
       });
+      
+      
+   $.get( '../a/catstemplate.hbs', function( source ) {
         
       function showInfo(data, tabletop) {
-        var source   = $("#cat-template").html();
+        //--var source   = $("#cat-template").html();//
         var template = Handlebars.compile(source);
 
         $.each( tabletop.sheets("Cats").all(), function(i, cat) {
@@ -33,8 +36,8 @@
           $("#content").append(html);
         });
       }
+   }
     
-      document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");    
-    </script>
+        </script>
   </body>
 </html>

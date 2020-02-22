@@ -31,6 +31,7 @@
         function loadtemplate(){
            $.get( '../a/catstemplate.hbs', function( source ) {
               var template = Handlebars.compile(source);
+             console.log(source);
  
 
         $.each( tabletop.sheets("Cats").all(), function(i, cat) {

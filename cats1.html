@@ -31,15 +31,17 @@
         function loadtemplate(){
            $.get( '../a/catstemplate.hbs', function( source ) {
               var template = Handlebars.compile(source);
-                  });
-            }
-
+ 
 
         $.each( tabletop.sheets("Cats").all(), function(i, cat) {
           var html = template(cat);
           $("#content").append(html);
         });
       }
+      
+        });
+          
+        }
    
     
         </script>

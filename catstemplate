@@ -1,0 +1,9 @@
+ <script id="cat-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h2>{{Name}}!</h2>
+        <h3>age {{Age}}</h3>
+        <div class="body">
+          {{{Description}}}
+        </div>
+      </div>
+    </script>

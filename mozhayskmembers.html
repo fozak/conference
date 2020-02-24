@@ -82,6 +82,7 @@
       function showInfo(data, tabletop) {
         var source1   = $("#events-template").html();
         var template1 = Handlebars.compile(source1);
+	       console.log('members loaded');
 
         $.each( tabletop.sheets("events").all(), function(i, events) {
           var html1 = template1(events);

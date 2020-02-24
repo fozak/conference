@@ -1,0 +1,75 @@
+<div class="speakers">
+		<div class="container reset_container">
+           
+     <!-- template start change-->
+     <div id="about"></div>
+     
+     <script id="about-template" type="text/x-handlebars-template">
+		         
+			<!-- Speaker -->
+			<div class="row row-lg-eq-height">
+				<div class="col-lg-6 speaker_col reset_col">
+					<div class="speaker_image" style="{{Slide1}}"></div>
+				</div>
+				<div class="col-lg-6">
+					<div class="speaker_content d-flex flex-column align-items-start justify-content-center">
+						<div class="speaker_title">{{SlideTitle1}}</div>
+						<div class="speaker_subtitle">{{SlideSlideSubtitle1}}</div>
+						<div class="speaker_text">
+							<p>{{SlideText1}}</p>
+						</div>
+						<div class="button speaker_button"><a href="{{SlideButtonLink1}}">{{SlideButtonText1}}</a></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Speaker -->
+			<div class="row row-lg-eq-height">
+				<div class="col-lg-6 order-lg-1 order-2">
+					<div class="speaker_content d-flex flex-column align-items-start justify-content-center">
+						<div class="speaker_title">{{SlideTitle2}}</div>
+						<div class="speaker_subtitle">{{SlideSlideSubtitle2}}</div>
+						<div class="speaker_text">
+							<p>{{SlideText2}}</p>
+						</div>
+						<div class="button speaker_button"><a href="{{SlideButtonLink2}}">{{SlideButtonText2}}</a></div>
+					</div>
+				</div>
+				<div class="col-lg-6 speaker_col reset_col order-lg-2 order-1">
+					<div class="speaker_image" style="{{Slide2}}"></div>
+				</div>
+			</div>
+
+  </script>
+  
+    </div>
+	</div>
+
+
+
+<script type="text/javascript" src="../a/handlebars.js"></script>
+<script type="text/javascript" src="../a/tabletop.js"></script>
+
+
+<script type="text/javascript">
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1L2Mr1hi_1D4o3aKcw3Pdb_CUdg5aDAU1XTPSKFiTHAI&output=html';
+
+      $(document).ready( function() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         parseNumbers: true } );
+      });
+        
+      function showInfo(data, tabletop) {
+        var source   = $("#about-template").html();   //---changed to about-template
+        var template = Handlebars.compile(source);
+
+        $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
+          var html = template(data);                                        //---changed to about-
+          $("#about").append(html);                                         //---changed to #about-
+        });
+      }
+    
+ </script>
+
+

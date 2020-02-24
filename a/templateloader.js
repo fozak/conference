@@ -9,34 +9,25 @@
                          parseNumbers: true } );
       });
         
-      function showInfo1(data, tabletop) {
+      function showInfo(data, tabletop) {
         var source   = $("#about-template").html();   //---changed to about-template
         var template = Handlebars.compile(source);
+	      
+	var source1   = $("#events-template").html();
+        var template1 = Handlebars.compile(source1);
 	      console.log('Slides loaded');
 
         $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
           var html = template(data);                                        //---changed to about-
           $("#content-aboutlist").append(html);                                         //---changed to #about-
         });
-      }
-
-
-
- //     $(document).ready( function() {
- //       Tabletop.init( { key: public_spreadsheet_url,
- //                        callback: showInfo,
-//                         parseNumbers: true } );
- //     });
-        
-      function showInfo2(data, tabletop) {
-        var source1   = $("#events-template").html();
-        var template1 = Handlebars.compile(source1);
-	       console.log('members loaded');
-
-        $.each( tabletop.sheets("events").all(), function(i, events) {
+	      
+	$.each( tabletop.sheets("events").all(), function(i, events) {
           var html1 = template1(events);
           $("#content-eventlist").append(html1);
         });
       }
+
+
     
 

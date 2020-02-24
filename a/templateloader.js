@@ -1,4 +1,3 @@
-<script type="text/javascript">
 
 // second template
       var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1L2Mr1hi_1D4o3aKcw3Pdb_CUdg5aDAU1XTPSKFiTHAI&output=html';
@@ -40,4 +39,4 @@
         });
       }
     
-    </script>
+

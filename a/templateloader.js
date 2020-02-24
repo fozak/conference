@@ -15,7 +15,7 @@
 	      
 	var source1   = $("#events-template").html();
         var template1 = Handlebars.compile(source1);
-	      console.log('Slides loaded');
+	      // console.log('Slides loaded');
 
         $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
           var html = template(data);                                        //---changed to about-

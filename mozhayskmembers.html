@@ -85,12 +85,12 @@
       });
         
       function showInfo(data, tabletop) {
-        var source   = $("#events-template").html();
-        var template = Handlebars.compile(source);
+        var source1   = $("#events-template").html();
+        var template1 = Handlebars.compile(source1);
 
         $.each( tabletop.sheets("events").all(), function(i, events) {
-          var html = template(events);
-          $("#content-eventlist").append(html);
+          var html1 = template(events);
+          $("#content-eventlist").append(html1);
         });
       }
     

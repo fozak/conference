@@ -256,8 +256,8 @@
         var source   = $("#about-template").html();   //---changed to about-template
         var template = Handlebars.compile(source);
 
-        $.each( tabletop.sheets('about').all(), function(i, about) {       //---changed to about-template
-          var html = template(about);                                        //---changed to about-
+        $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
+          var html = template(data);                                        //---changed to about-
           $("#about").append(html);                                         //---changed to #about-
         });
       }

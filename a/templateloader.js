@@ -26,8 +26,8 @@
         var template1 = Handlebars.compile(source1);
 	      // console.log('Slides loaded');
 	      
-	 $.each( tabletop.sheets('navigation').all(), function(i, data) {       //---changed to about-template
-          var html0 = template0(data);                                        //---changed to about-
+	 $.each( tabletop.sheets('navigation').all(), function(i, navigation) {       //---changed to about-template
+          var html0 = template0(navigation);                                        //---changed to about-
           $("#content-navigation").append(html0);                                         //---changed to #about-
         });
 

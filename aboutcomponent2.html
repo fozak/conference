@@ -2,7 +2,7 @@
 		<div class="container reset_container">
            
      <!-- template start change-->
-     <div id="about"></div>
+     <div id="content-aboutlist"></div>
      
      <script id="about-template" type="text/x-handlebars-template">
 		         
@@ -66,7 +66,7 @@
 
         $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
           var html = template(data);                                        //---changed to about-
-          $("#about").append(html);                                         //---changed to #about-
+          $("#content-aboutlist").append(html);                                         //---changed to #about-
         });
       }
     

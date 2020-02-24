@@ -59,6 +59,7 @@
       function showInfo(data, tabletop) {
         var source   = $("#about-template").html();   //---changed to about-template
         var template = Handlebars.compile(source);
+	      console.log('Slides loaded');
 
         $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
           var html = template(data);                                        //---changed to about-

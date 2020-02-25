@@ -39,22 +39,14 @@ console.log(templatename1, templatename2, sheetname1, sheetname2 );
 	      
 	var source1   = $(templatename2).html();
         var template1 = Handlebars.compile(source1);
-	      // console.log('Slides loaded');
-	      
-	// $.each( tabletop.sheets('navigation').all(), function(i, navigation) {       //---changed to about-template
-       //   var html0 = template0(navigation);                                        //---changed to about-
-       //   $("#1").append(html0);   
-	//	 console.log(html0);
-	//	 //---changed to #about-
-     //   });
-
-        $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
+	     
+        $.each( tabletop.sheets(sheetname1).all(), function(i, data) {       //---changed to about-template
           var html = template(data);                                        //---changed to about-
           $("#content-aboutlist").append(html);                                         //---changed to #about-
         });
 	      
-	$.each( tabletop.sheets("events").all(), function(i, events) {
-          var html1 = template1(events);
+	$.each( tabletop.sheets(sheetname2).all(), function(i, data1) {
+          var html1 = template1(data1);
           $("#content-eventlist").append(html1);
         });
       }

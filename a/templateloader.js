@@ -25,15 +25,12 @@ console.log(templatename1, templatename2, sheetname1, sheetname2 );
       });
 
 
-	//var source0   = $("#navigation-template").html();   //---changed to about-template
-       // var template0 = Handlebars.compile(source0);
+	
         
       function showInfo(data, tabletop) {
 	      
 	
-	//var source0   = $("#navigation-template").html();   //---changed to about-template
-       // var template0 = Handlebars.compile(source0);
-	      
+	
         var source   = $(templatename1).html();   //---changed to about-template
         var template = Handlebars.compile(source);
 	      

@@ -10,14 +10,14 @@
       });
 
 
-	var source0   = $("#navigation-template").html();   //---changed to about-template
-        var template0 = Handlebars.compile(source0);
+	//var source0   = $("#navigation-template").html();   //---changed to about-template
+       // var template0 = Handlebars.compile(source0);
         
       function showInfo(data, tabletop) {
 	      
 	
-	var source0   = $("#navigation-template").html();   //---changed to about-template
-        var template0 = Handlebars.compile(source0);
+	//var source0   = $("#navigation-template").html();   //---changed to about-template
+       // var template0 = Handlebars.compile(source0);
 	      
         var source   = $("#about-template").html();   //---changed to about-template
         var template = Handlebars.compile(source);
@@ -26,12 +26,12 @@
         var template1 = Handlebars.compile(source1);
 	      // console.log('Slides loaded');
 	      
-	 $.each( tabletop.sheets('navigation').all(), function(i, navigation) {       //---changed to about-template
-          var html0 = template0(navigation);                                        //---changed to about-
-          $("#1").append(html0);   
-		 console.log(html0);
-		 //---changed to #about-
-        });
+	// $.each( tabletop.sheets('navigation').all(), function(i, navigation) {       //---changed to about-template
+       //   var html0 = template0(navigation);                                        //---changed to about-
+       //   $("#1").append(html0);   
+	//	 console.log(html0);
+	//	 //---changed to #about-
+     //   });
 
         $.each( tabletop.sheets('about').all(), function(i, data) {       //---changed to about-template
           var html = template(data);                                        //---changed to about-

@@ -31,10 +31,10 @@ console.log(templatename1, templatename2);
 	//var source0   = $("#navigation-template").html();   //---changed to about-template
        // var template0 = Handlebars.compile(source0);
 	      
-        var source   = $("#about-template").html();   //---changed to about-template
+        var source   = $(templatename1).html();   //---changed to about-template
         var template = Handlebars.compile(source);
 	      
-	var source1   = $("#events-template").html();
+	var source1   = $(templatename2).html();
         var template1 = Handlebars.compile(source1);
 	      // console.log('Slides loaded');
 	      

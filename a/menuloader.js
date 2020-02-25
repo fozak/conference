@@ -2,6 +2,7 @@
 // second template
 
 var datamenuitem = document.currentScript.getAttribute('data-menuitem');
+var datamenuitemvalue = document.currentScript.getAttribute('data-menuitemvalue');
 var datamenuitemorder = document.currentScript.getAttribute('data-menuitemorder');  //order
 var templateprefix2 = document.currentScript.getAttribute('data-templateprefix2'); //events
 
@@ -14,7 +15,8 @@ console.log(datamenuitem, datamenuitemorder);
 
    
   $(document).ready( function() {
-      
+      	var item = document.getElementById(datamenuitem);
+	item.value = datamenuitemvalue;
       });
 
 

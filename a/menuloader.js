@@ -10,7 +10,7 @@ var templateprefix2 = document.currentScript.getAttribute('data-templateprefix2'
 //var templatename1 = prefix1.concat(templateprefix1,prefix2); //#about-template
 
 
-console.log(datamenuitem, datamenuitemorder);
+console.log(datamenuitem, datamenuitemvalue, datamenuitemorder);
 
 
    

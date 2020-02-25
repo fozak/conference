@@ -6,8 +6,8 @@ var templateprefix1 = document.currentScript.getAttribute('data-templateprefix1'
 var templateprefix2 = document.currentScript.getAttribute('data-templateprefix2'); //events
 var prefix1 = "#";
 var prefix2 = "-template";
-var templatename1 = prefix1.concat(templateprefix1;prefix2); //#about-template
-var templatename2 = prefix1.concat(templateprefix2;prefix2); //#events-template
+var templatename1 = prefix1.concat(templateprefix1,prefix2); //#about-template
+var templatename2 = prefix1.concat(templateprefix2,prefix2); //#events-template
 
 console.log(templatename1, templatename2);
 

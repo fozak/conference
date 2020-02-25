@@ -15,7 +15,7 @@ console.log(datamenuitem, datamenuitemvalue, datamenuitemorder);
 
    
   $(document).ready( function() {
-      	var item = document.getElementById(datamenuitem);
+      	var item = document.getElementById('breadcrumb');
 	item.value = datamenuitemvalue;
       });
 

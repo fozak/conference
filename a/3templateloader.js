@@ -36,10 +36,13 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
 	
 	
         var source1   = $(templatename1).html();   //---changed to about-template
-        var template1 = Handlebars.compile(source);
+        var template1 = Handlebars.compile(source1);
 	      
-	      var source2   = $(templatename2).html();
-        var template2 = Handlebars.compile(source1);
+	var source2   = $(templatename2).html();
+        var template2 = Handlebars.compile(source2);
+	      
+	var source3   = $(templatename3).html();
+        var template3 = Handlebars.compile(source3);
         
         
 	     

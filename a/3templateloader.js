@@ -59,7 +59,9 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
       
       $.each( tabletop.sheets(sheetname3).all(), function(i, data3) {       //---changed to bemefit-template
           var html3 = template3(data3);                                        
-          $("#content-introlist").append(html3);                            
+          //$("#content-introlist").append(html3);     
+	      
+	     $("#content-introlist").replaceWith(html3); // replaceWith
         });
 	      
       }

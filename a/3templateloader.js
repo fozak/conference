@@ -55,12 +55,14 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
           var html2 = template2(data2);
           $("#content-eventlist").append(html2);
         });
-      }
+      
       
       $.each( tabletop.sheets(sheetname3).all(), function(i, data3) {       //---changed to bemefit-template
           var html3 = template3(data3);                                        
           $("#content-introlist").append(html3);                            
         });
+	      
+      }
 
 
     

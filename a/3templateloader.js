@@ -4,7 +4,7 @@
 var dataprefix = document.currentScript.getAttribute('data-prefix');
 var templateprefix1 = document.currentScript.getAttribute('data-templateprefix1');  //about
 var templateprefix2 = document.currentScript.getAttribute('data-templateprefix2'); //events
-var templateprefix3 = document.currentScript.getAttribute('data-templateprefix3'); //benefits
+var templateprefix3 = document.currentScript.getAttribute('data-templateprefix3'); //intro
 
 var prefix1 = "#";
 var prefix2 = "-template";
@@ -56,7 +56,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
       
       $.each( tabletop.sheets(sheetname3).all(), function(i, data3) {       //---changed to bemefit-template
           var html3 = template3(data3);                                        
-          $("#content-benefitlist").append(html3);                            
+          $("#content-introlist").append(html3);                            
         });
 
 

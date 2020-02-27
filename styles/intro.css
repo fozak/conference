@@ -1,0 +1,88 @@
+/*********************************
+5. Intro
+*********************************/
+
+.intro
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 115px;
+	padding-bottom: 67px;
+	padding-left: 144px;
+	padding-right: 144px;
+}
+.intro_content
+{
+	flex-grow: 1;
+}
+.intro_item
+{
+	width: calc((100% - 60px) / 3);
+	background: #f3f7f9;
+	margin-bottom: 48px;
+}
+.intro_image
+{
+	width: 100%;
+}
+.intro_image img
+{
+	max-width: 100%;
+}
+.intro_body
+{
+	padding-left: 39px;
+	padding-top: 33px;
+	padding-bottom: 39px;
+}
+.intro_body::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-color: #4867c0;
+	background-image: linear-gradient(to right, #4867c0, #329fec);
+	background: #4867c0;
+	background: linear-gradient(to right, #4867c0, #329fec);
+	opacity: 0;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.intro_item:hover .intro_body::after
+{
+	opacity: 1;
+}
+.intro_title a
+{
+	position: relative;
+	font-size: 24px;
+	font-weight: 500;
+	color: #4c4c4c;
+	z-index: 1;
+}
+.intro_item:hover .intro_title a,
+.intro_item:hover .intro_subtitle
+{
+	color: #FFFFFF;
+}
+.intro_subtitle
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #888888;
+	margin-top: -1px;
+	padding-left: 1px;
+	z-index: 1;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}

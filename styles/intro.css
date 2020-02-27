@@ -27,7 +27,9 @@
 }
 .intro_image img
 {
-	max-width: 100%;
+	height: 100%;  /*******changes ****/
+    	object-fit: contain; /*******changes ****/
+    	width: 100%; /*******changes ****/
 }
 .intro_body
 {

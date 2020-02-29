@@ -54,7 +54,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
 	     
         $.each( tabletop.sheets(sheetname1).all(), function(i, data1) {       //---changed to about-template
           var html1 = template1(data1);                                        //---changed to about-
-          $("#content-aboutlist").append(html1);                                         //---changed to #about-
+          $("#content-menulist").append(html1);                                         //---changed to #about-
         });
 	      
 	     $.each( tabletop.sheets(sheetname2).all(), function(i, data2) {
@@ -72,7 +72,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
         
         $.each( tabletop.sheets(sheetname4).all(), function(i, data4) {       //---changed to bemefit-template
           var html4 = template4(data4);                                        
-          $("#content-menulist").append(html4);     
+          $("#content-aboutlist").append(html4);     
 	      
 	console.log(html4 );
         });

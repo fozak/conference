@@ -74,7 +74,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
           var html4 = template4(data4);                                        
           $("#content-menulist").append(html4);     
 	      
-	console.log("Меню загружено" );
+	console.log(html4 );
         });
 	      
       }

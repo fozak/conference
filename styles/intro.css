@@ -93,10 +93,8 @@
 
 .intro_mainbody
 {
-	padding-left: 39px;
-	padding-top: 33px;
-	padding-bottom: 39px;
-	top: 200px;
+	width: 100%;
+	top: 260px;
 	height: 80px;
 	position: absolute;
 }
@@ -130,7 +128,7 @@
 	padding-left: 15px;
 	padding-top: 33px;
 	padding-bottom: 39px;
-	top: 200px;
+	top: 242px;
 	height: 60px;
 	position: absolute;
 }

@@ -20,7 +20,7 @@
 	width: calc((100% - 60px) / 3);
 	background: #f3f7f9;
 	margin-bottom: 48px;
-	height: 460px;   /* added*/
+	height: 506px;   /* added*/
 }
 .intro_image
 {
@@ -36,6 +36,9 @@
 {
 	position: absolute;
 	top: 324px; /*changed */
+	background: #f3f7f9; /*added */
+	z-index: 2;
+	
 }
 .intro_body::after
 {
@@ -170,4 +173,5 @@
 	height: 100%;
     	object-fit: contain;
     	width: 82%;
+	z-index: 3;
 }

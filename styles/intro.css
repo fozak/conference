@@ -120,3 +120,14 @@
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+
+.intro_maintitle
+{
+	font-size: 24px;
+	color: #ffffff;
+	padding-left: 39px;
+	padding-top: 33px;
+	padding-bottom: 39px;
+	margin-top: -140px;
+	height: 60px;
+}

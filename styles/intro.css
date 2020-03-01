@@ -20,6 +20,7 @@
 	width: calc((100% - 60px) / 3);
 	background: #f3f7f9;
 	margin-bottom: 48px;
+	height: 460px;   /* added*/
 }
 .intro_image
 {
@@ -34,7 +35,7 @@
 .intro_body
 {
 	position: absolute;
-	top: 324px;
+	top: 324px; /*changed */
 }
 .intro_body::after
 {

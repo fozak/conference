@@ -96,7 +96,8 @@
 	padding-left: 39px;
 	padding-top: 33px;
 	padding-bottom: 39px;
-	margin-top: -100px
+	margin-top: -150px;
+	height: 60px;
 }
 
 .intro_mainbody::after

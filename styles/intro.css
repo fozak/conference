@@ -132,3 +132,15 @@
 	height: 60px;
 	position: absolute;
 }
+
+.intro_picture
+{
+	top: 280px;
+	position: absolute;
+}
+.intro_picture img
+{
+	height: 10%;  /*******changes ****/
+    	object-fit: contain; /*******changes ****/
+    	width: 10%; /*******changes ****/
+}

@@ -146,6 +146,19 @@
 	position: absolute;
 }
 
+.intro_mainsubtitle
+{
+	font-size: 15px;
+	font-weight:bold;
+	color: #ffffff;
+	padding-left: 15px;
+	padding-top: 33px;
+	padding-bottom: 39px;
+	top: 257px;
+	height: 60px;
+	position: absolute;
+}
+
 .intro_picture
 {
 	top: 300px;

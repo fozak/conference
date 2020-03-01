@@ -99,7 +99,7 @@
 	margin-top: -100px
 }
 
-.intro_body::after
+.intro_mainbody::after
 {
 	display: block;
 	position: absolute;

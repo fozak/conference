@@ -135,12 +135,13 @@
 
 .intro_picture
 {
-	top: 280px;
+	top: 290px;
 	position: absolute;
+	left: 300px;
 }
 .intro_picture img
 {
-	height: 10%;  /*******changes ****/
+	height: 20%;  /*******changes ****/
     	object-fit: contain; /*******changes ****/
-    	width: 10%; /*******changes ****/
+    	width: 20%; /*******changes ****/
 }

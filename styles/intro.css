@@ -91,6 +91,19 @@
 
 /* new ----intro_mainbody */
 
+.intro_logo
+{
+	top: 20px;
+    	position: absolute;
+    	left: 20px;
+}
+.intro_logo img
+{
+	height: 50%;
+    	object-fit: contain;
+    	width: 50%;
+}
+
 .intro_mainbody
 {
 	width: 100%;

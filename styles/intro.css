@@ -170,11 +170,11 @@
 	top: 300px;
     	position: absolute;
     	left: 260px;
+	z-index: 3;
 }
 .intro_picture img
 {
 	height: 100%;
     	object-fit: contain;
     	width: 82%;
-	z-index: 3;
 }

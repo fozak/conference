@@ -19,8 +19,10 @@
 {
 	width: calc((100% - 60px) / 3);
 	background: #f3f7f9;
-	margin-bottom: 48px;
-	height: 506px;   /* added*/
+	margin-bottom: 48px; /* added*/
+	height: 506px;    /*added*/
+	/*max-height: 300px;  added*/
+    	overflow: hidden /* added*/
 }
 .intro_image
 {

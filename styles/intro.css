@@ -24,6 +24,12 @@
 	/*max-height: 300px;  added*/
     	overflow: hidden /* added*/
 }
+
+.intro_item:hover  /***added****/ 
+{
+	opacity: 0.5;
+}	
+	
 .intro_image
 {
 	width: 100%;
@@ -52,7 +58,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 0%;  /******** changes to 10%***/
 	content: '';
 	background-color: #4867c0;
 	background-image: linear-gradient(to right, #4867c0, #329fec);

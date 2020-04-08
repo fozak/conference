@@ -20,7 +20,8 @@
 	var email= $("#email").val();
 	var subject= $("#subject").val();
 	var message= $("#message").val();
-  var id=$("#id").val();
+  	var id=$("#id").val();
+	 console.log("id=",id);
    var url = script_url+"?callback=ctrlq&message="+message+"&subject="+subject+"&email="+email+"&name="+name+"&id="+id+"&action=insert"; 
     var request = jQuery.ajax({
       crossDomain: true,

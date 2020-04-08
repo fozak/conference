@@ -20,9 +20,9 @@
 	var email= $("#email").val();
 	var subject= $("#subject").val();
 	var message= $("#message").val();
-  	var id=$("#button1").attr('data');
-	 console.log("id=",id);
-   var url = script_url+"?callback=ctrlq&message="+message+"&subject="+subject+"&email="+email+"&name="+id+"&id="+id+"&action=insert"; 
+  	var projectid=$("#button1").attr('data');
+	 console.log("id=",projectid);
+   var url = script_url+"?callback=ctrlq&message="+message+"&subject="+subject+"&email="+email+"&name="+projectid+"&projectid="+projectid+"&action=insert"; 
     var request = jQuery.ajax({
       crossDomain: true,
       url: url ,

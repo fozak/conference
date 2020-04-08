@@ -6,7 +6,7 @@
    Email: <input type="text" name="name" class="form-control" id="email"  />
     Subject: <input type="text" name="name" class="form-control" id="subject"  />
 	 Message: <input type="text" name="name" class="form-control" id="message"  />
-	 <input type="submit" id="b1" onClick="insert_value()" class="btn" value="Send message">
+	 <input type="submit" id="button1" data="uniqueid12" onClick="insert_value()" class="btn" value="Send message">
   </body>
   
   
@@ -20,7 +20,7 @@
 	var email= $("#email").val();
 	var subject= $("#subject").val();
 	var message= $("#message").val();
-  	var id=$("#id").attr('id');
+  	var id=$("#button1").attr('data');
 	 console.log("id=",id);
    var url = script_url+"?callback=ctrlq&message="+message+"&subject="+subject+"&email="+email+"&name="+name+"&id="+id+"&action=insert"; 
     var request = jQuery.ajax({

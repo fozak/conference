@@ -60,7 +60,7 @@
 	.intro_item
 	{
 		width: calc((100% - 30px) / 2);
-		background: #f3f7f9;
+		background: #FFFFFF;  /***was background: #f3f7f9 ******************************/
 		margin-bottom: 48px;
 	}
 }

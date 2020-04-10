@@ -5,7 +5,7 @@
 .intro
 {
 	width: 100%;
-	background: #FFFFFF;
+	background: #f3f7f9;  /***was background: #FFFFFF ******************************/
 	padding-top: 115px;
 	padding-bottom: 67px;
 	padding-left: 144px;
@@ -18,7 +18,7 @@
 .intro_item
 {
 	width: calc((100% - 60px) / 3);
-	background: #f3f7f9;
+	background: #FFFFFF;  /***was background: #f3f7f9 ******************************/
 	margin-bottom: 48px; /* added*/
 	height: 506px;    /*added*/
 	/*max-height: 300px;  added*/

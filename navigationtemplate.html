@@ -1,3 +1,4 @@
+<script id="menu-template" type="text/x-handlebars-template"> <!--added-->
 <div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
@@ -7,7 +8,7 @@
 						<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
 						<div class="logo_content">
 							<div class="logo_text logo_text_not_ie">ScaleUp Клуб</div>
-							<div class="logo_sub">Бизнес-клуб</div>
+							<div class="logo_sub">{{LogoSubtitle}}</div> <!--Бизнес-клуб-->
 						</div>
 					</div>
 				</a>
@@ -34,8 +35,8 @@
 	<!-- Home -->
 
 
-  <div class="home" id="content-menulist"></div>
-   <script id="menu-template" type="text/x-handlebars-template">
+  <div class="" id="content-menulist"></div> <!-- was <div class="home" id="content-menulist"></div>-->
+   <!--<script id="menu-template" type="text/x-handlebars-template">
   
 		<div class="parallax_background parallax-window" style="background-image: url(images/news.jpg)"></div>
 		<!--<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/news.jpg" data-speed="0.8"></div>-->

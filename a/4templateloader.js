@@ -72,7 +72,7 @@ console.log(templatename1, templatename2, templatename3, templatename4, sheetnam
         
         $.each( tabletop.sheets(sheetname4).all(), function(i, data4) {       //---changed to bemefit-template
           var html4 = template4(data4);                                        
-          $(templatename4).append(html4);     
+          $("#content-footer").append(html4);     
 	      
 	console.log(html4 ); /*log*/
         });

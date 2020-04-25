@@ -19,7 +19,7 @@ var templatename2 = prefix1.concat(templateprefix2,prefix2); //#events-template
 var templatename3 = prefix1.concat(templateprefix3,prefix2); //#benefits-template
 var templatename4 = prefix1.concat(templateprefix4,prefix2); //#menu-template
 
-console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2, sheetname3, sheetname4, sheetname4 );
+console.log(templatename1, templatename2, templatename3, templatename4, sheetname1, sheetname2, sheetname3, sheetname4 );
 
 
       var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1L2Mr1hi_1D4o3aKcw3Pdb_CUdg5aDAU1XTPSKFiTHAI&output=html';
@@ -47,7 +47,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
 	var source3   = $(templatename3).html();
         var template3 = Handlebars.compile(source3);
         
-        var source4   = $(templatename4).html();
+        	var source4   = $(templatename4).html();
         var template4 = Handlebars.compile(source4);
         
         
@@ -57,7 +57,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
           $("#content-menulist").append(html1);                                         //---changed to #about-
         });
 	      
-	 $.each( tabletop.sheets(sheetname2).all(), function(i, data2) {
+	     $.each( tabletop.sheets(sheetname2).all(), function(i, data2) {
           var html2 = template2(data2);
           $("#content-eventlist").append(html2);
         });
@@ -72,9 +72,9 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
         
         $.each( tabletop.sheets(sheetname4).all(), function(i, data4) {       //---changed to bemefit-template
           var html4 = template4(data4);                                        
-          $("#content-aboutlist").append(html4);     
+          $(templatename4).append(html4);     
 	      
-	/*console.log(html4 );*/
+	console.log(html4 ); /*log*/
         });
 	      
 	      

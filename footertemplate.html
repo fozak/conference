@@ -1,3 +1,6 @@
+
+<div class="" id="footer-template"></div> <!--was #content-footer    ed-->
+<script id="footer-template" type="text/x-handlebars-template"> 
 <footer class="footer">
 		<div class="footer_content">
 			<div class="container">
@@ -11,18 +14,15 @@
 									<div class="logo_container d-flex flex-row align-items-start justify-content-start">
 										<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
 										<div class="logo_content">
-											<div id="logo_text" class="logo_text logo_text_not_ie">ScaleUp Клуб</div>
-											<div class="logo_sub">Бизнес-клуб для предпринимателей</div>
+											<div id="logo_text" class="logo_text logo_text_not_ie">{{FooterLogoText}}</div>
+											<div class="logo_sub">{{FooterLogoSubText}}</div>
 										</div>
 									</div>
 								</a>	
 							</div>
 							<div class="footer_about_text">
 								<p>
-								ScaleUp клуб - программа ООО «Центр Предпринимательства».  
-								ООО «Центр Предпринимательства»  частный институт развития, 
-								с 2002 года ведущий системную работу по развитию предпринимательства
-								в России.	
+								{{FooterAboutText}}
 								</p>
 							</div>
 						</div>
@@ -32,12 +32,12 @@
 					<div class="col-lg-3 footer_col">
 						<div class="footer_links">
 							<ul>
-								<li><a href="index.html">О клубе</a></li>
-								<li><a href="advantages.html">Преимущества</a></li>
-								<li><a href="speakers.html">Участники</a></li>
-								<li><a href="cities.html">Города</a></li>
-								<li><a href="news.html">Новости</a></li>
-								<li><a href="contact.html">Контакт</a></li>
+								<li><a href="{{FooterLink1}}">{{FooterText1}}</a></li>
+								<li><a href="{{FooterLink2}}">{{FooterText2}}</a></li>
+								<li><a href="{{FooterLink3}}">{{FooterText3}}</a></li>
+								<li><a href="{{FooterLink4}}">{{FooterText4}}</a></li>
+								<li><a href="{{FooterLink5}}">{{FooterText5}}</a></li>
+								<li><a href="{{FooterLink6}}">{{FooterText6}}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -46,12 +46,12 @@
 					<div class="col-lg-3 footer_col">
 						<div class="footer_links">
 							<ul>
-								<li><a href="cities.html">Москва</a></li>
-								<li><a href="cities.html">Московская область</a></li>
-								<li><a href="cities.html">Можайск</a></li>
-								<li><a href="cities.html">Калининград</a></li>
-								<li><a href="cities.html">Киров</a></li>
-								<li><a href="cities.html">Краснодар</a></li>
+								<li><a href="{{FooterLink7}}">{{FooterText7}}</a></li>
+								<li><a href="{{FooterLink8}}">{{FooterText8}}</a></li>
+								<li><a href="{{FooterLink9}}">{{FooterText9}}</a></li>
+								<li><a href="{{FooterLink10}}">{{FooterText10}}</a></li>
+								<li><a href="{{FooterLink11}}">{{FooterText11}}</a></li>
+								<li><a href="{{FooterLink12}}">{{FooterText12}}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -60,12 +60,12 @@
 					<div class="col-lg-2 footer_col">
 						<div class="footer_links">
 							<ul>
-								<li><a href="cities.html">Владимир</a></li>
-								<li><a href="cities.html">Воронеж</a></li>
-								<li><a href="cities.html">Тюмень</a></li>
-								<li><a href="cities.html">Йошкар-Ола</a></li>
-								<li><a href="cities.html">Омск</a></li>
-								<li><a href="cities.html">Томск</a></li>
+								<li><a href="{{FooterLink13}}">{{FooterText13}}</a></li>
+								<li><a href="{{FooterLink14}}">{{FooterText14}}</a></li>
+								<li><a href="{{FooterLink15}}">{{FooterText15}}</a></li>
+								<li><a href="{{FooterLink16}}">{{FooterText16}}</a></li>
+								<li><a href="{{FooterLink17}}">{{FooterText17}}</a></li>
+								<li><a href="{{FooterLink18}}">{{FooterText18}}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -81,27 +81,27 @@
 							<div class="footer_social">
 								<div class="footer_social_title">Социальные медиа:</div>
 								<ul class="footer_social_list">
-									<li><a href="https://www.instagram.com/cfe_russia/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-									<li><a href="https://www.facebook.com/CenterPredprinimatelstva"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="https://vk.com/cfe_russia"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-									<li><a href="https://t.me/cfe_russia"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+									<li><a href="{{FooterSocialLink1}}"><i class="{{FooterSocialClass1}}" aria-hidden="true"></i></a></li>
+									<li><a href="{{FooterSocialLink2}}"><i class="{{FooterSocialClass2}}" aria-hidden="true"></i></a></li>
+									<li><a href="{{FooterSocialLink3}}"><i class="{{FooterSocialClass3}}" aria-hidden="true"></i></a></li>
+									<li><a href="{{FooterSocialLink4}}"><i class="{{FooterSocialClass4}}" aria-hidden="true"></i></a></li>
 											
 								</ul>
 							</div>
 							<div class="footer_extra_right ml-lg-auto text-lg-right">
 								<div class="footer_extra_links">
 									<ul>
-										<li><a href="contact.html">Контакты</a></li>
-										<li><a href="#">Карта сайта</a></li>
-										<li><a href="#">Персональные данные</a></li>
+										<li><a href="{{FooterLink19}}">{{FooterText19}}</a></li>
+										<li><a href="{{FooterLink20}}">{{FooterText20}}</a></li>
+										<li><a href="{{FooterLink21}}">{{FooterText21}}</a></li>
 									</ul>
 								</div>
-								<div class="copyright"><!-- Link back to  can't be removed. Template is licensed under CC BY 3.0. -->
+								<div class="copyright">
 Copyright &copy;
 									<!--
 									<script>document.write(new Date().getFullYear());</script> -->
-All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://cfe.ru" target="_blank">Центр предпринимательства</a>
-<!-- Link back to  can't be removed.  --></div>
+All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="{{FooterLink22}}" target="_blank">{{FooterText22}}</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -109,3 +109,4 @@ All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href=
 			</div>
 		</div>
 	</footer>
+	</script>

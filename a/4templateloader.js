@@ -47,7 +47,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
 	var source3   = $(templatename3).html();
         var template3 = Handlebars.compile(source3);
         
-        	var source4   = $(templatename4).html();
+        var source4   = $(templatename4).html();
         var template4 = Handlebars.compile(source4);
         
         
@@ -57,7 +57,7 @@ console.log(templatename1, templatename2, templatename3, sheetname1, sheetname2,
           $("#content-menulist").append(html1);                                         //---changed to #about-
         });
 	      
-	     $.each( tabletop.sheets(sheetname2).all(), function(i, data2) {
+	 $.each( tabletop.sheets(sheetname2).all(), function(i, data2) {
           var html2 = template2(data2);
           $("#content-eventlist").append(html2);
         });

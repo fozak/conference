@@ -1,24 +1,23 @@
 
 // second template
-var dataprefix1 = document.currentScript.getAttribute('data-prefix1'); //sitelinks
-var dataprefix = document.currentScript.getAttribute('data-prefix');
 
-var templateprefix1 = document.currentScript.getAttribute('data-templateprefix1');  //menu
+var dataprefix = document.currentScript.getAttribute('data-prefix');
+var templateprefix1 = document.currentScript.getAttribute('data-templateprefix1');  //about
 var templateprefix2 = document.currentScript.getAttribute('data-templateprefix2'); //events
 var templateprefix3 = document.currentScript.getAttribute('data-templateprefix3'); //intro
-var templateprefix4 = document.currentScript.getAttribute('data-templateprefix4'); //footer
+var templateprefix4 = document.currentScript.getAttribute('data-templateprefix4'); //menu
 
 var prefix1 = "#";
 var prefix2 = "-template";
-var sheetname1 = dataprefix1; //mozhaysk-about
+var sheetname1 = dataprefix.concat("-",templateprefix1); //mozhaysk-about
 var sheetname2 = dataprefix.concat("-",templateprefix2); //mozhaysk-events
 var sheetname3 = dataprefix.concat("-",templateprefix3); //mozhaysk-benefits
-var sheetname4 = dataprefix1; //mozhaysk-menu
+var sheetname4 = dataprefix.concat("-",templateprefix4); //mozhaysk-menu
 
-var templatename1 = prefix1.concat(templateprefix1,prefix2); //#menu-template
+var templatename1 = prefix1.concat(templateprefix1,prefix2); //#about-template
 var templatename2 = prefix1.concat(templateprefix2,prefix2); //#events-template
 var templatename3 = prefix1.concat(templateprefix3,prefix2); //#benefits-template
-var templatename4 = prefix1.concat(templateprefix4,prefix2); //#footer-template
+var templatename4 = prefix1.concat(templateprefix4,prefix2); //#menu-template
 
 console.log(templatename1, templatename2, templatename3, templatename4, sheetname1, sheetname2, sheetname3, sheetname4 );
 

@@ -57,12 +57,12 @@ console.log(templatename1, templatename2, templatename3, templatename4, sheetnam
           var html1 = template1(data1);                                        //---changed to about-
           $("#content-menulist").append(html1);                                         //---changed to #about-
         });
-	      
+	      if(sheetname2 !== null){
 	     $.each( tabletop.sheets(sheetname2).all(), function(i, data2) {
           var html2 = template2(data2);
           $("#content-eventlist").append(html2);
         });
-      
+		  }
       
       $.each( tabletop.sheets(sheetname3).all(), function(i, data3) {       //---changed to bemefit-template
           var html3 = template3(data3);                                        
@@ -75,7 +75,7 @@ console.log(templatename1, templatename2, templatename3, templatename4, sheetnam
           var html4 = template4(data4);                                        
           $("#content-footer").append(html4);     
 	      
-	console.log(html4 ); /*log*/
+	/*console.log(html4 ); log*/
         });
 	      
 	      

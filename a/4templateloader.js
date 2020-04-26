@@ -57,7 +57,8 @@ console.log(templatename1, templatename2, templatename3, templatename4, sheetnam
           var html1 = template1(data1);                                        //---changed to about-
           $("#content-menulist").append(html1);                                         //---changed to #about-
         });
-	      if(sheetname2 !== null){
+	      
+		  if(sheetname2 !== ""){
 	     $.each( tabletop.sheets(sheetname2).all(), function(i, data2) {
           var html2 = template2(data2);
           $("#content-eventlist").append(html2);

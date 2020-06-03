@@ -1,21 +1,3 @@
-var url;
-	var id;
-	var j=1;
-	var x = load(); 
-	
-function load() {
-	$('div[data-loader]').each(function() {
-		url=$(this).attr("data-loader");
-		id=$(this).attr("id");
-    		var tmp_j = j++;
-    		 $.get(url, function(data){
-			 //$('#'+tmp_j).html(data);
- 			//$('#'+tmp_j).append(data);
-			 $(data).insertAfter($('#'+tmp_j));
-
-			 });
-	});
-};
 
 // second template
 var dataprefix1 = document.currentScript.getAttribute('data-prefix1'); //sitelinks
@@ -25,8 +7,6 @@ var templateprefix1 = document.currentScript.getAttribute('data-templateprefix1'
 var templateprefix2 = document.currentScript.getAttribute('data-templateprefix2'); //events
 var templateprefix3 = document.currentScript.getAttribute('data-templateprefix3'); //intro
 var templateprefix4 = document.currentScript.getAttribute('data-templateprefix4'); //footer
-
-
 
 var prefix1 = "#";
 var prefix2 = "-template";

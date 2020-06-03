@@ -1,8 +1,9 @@
 	var url;
 	var id;
 	var j=1;
+	var x = load(); 
 	
-function () {
+function load() {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
 		id=$(this).attr("id");

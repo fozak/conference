@@ -1,3 +1,13 @@
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1L2Mr1hi_1D4o3aKcw3Pdb_CUdg5aDAU1XTPSKFiTHAI&output=html';
+	  var x = tabletopinit(); 
+
+  function tabletopinit() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         parseNumbers: true } );
+      };
+
 var url;
 	var id;
 	var j=1;
@@ -42,7 +52,7 @@ var templatename4 = prefix1.concat(templateprefix4,prefix2); //#footer-template
 
 console.log(templatename1, templatename2, templatename3, templatename4, sheetname1, sheetname2, sheetname3, sheetname4 );
 
-
+/*
       var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1L2Mr1hi_1D4o3aKcw3Pdb_CUdg5aDAU1XTPSKFiTHAI&output=html';
 	  var x = tabletopinit(); 
 
@@ -50,7 +60,7 @@ console.log(templatename1, templatename2, templatename3, templatename4, sheetnam
         Tabletop.init( { key: public_spreadsheet_url,
                          callback: showInfo,
                          parseNumbers: true } );
-      };
+      };*/
 
 
 	

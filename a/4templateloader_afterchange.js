@@ -24,13 +24,13 @@ console.log(templatename1, templatename2, templatename3, templatename4, sheetnam
 
 
       var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1L2Mr1hi_1D4o3aKcw3Pdb_CUdg5aDAU1XTPSKFiTHAI&output=html';
-	  var x = tabletopinit(); 
 
-  function tabletopinit() {
+
+  $(document).ready( function() {
         Tabletop.init( { key: public_spreadsheet_url,
                          callback: showInfo,
                          parseNumbers: true } );
-      };
+      });
 
 
 	

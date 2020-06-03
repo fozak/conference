@@ -2,7 +2,7 @@
 	var id;
 	var j=1;
 	
-function () {
+$(document).ready(function () {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
 		id=$(this).attr("id");
@@ -14,4 +14,4 @@ function () {
 
 			 });
 	});
-};
+});
